@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion d'objets JavaScript</title>
+</head>
+<body>
+    
+  <h2>Gestion d'objets JavaScript</h2>
+
+  <div>
+    <label for="title">Titre :</label>
+    <input type="text" id="title">
+    <br>
+
+    <label for="description">Description :</label>
+    <textarea id="description"></textarea>
+    <br>
+    
+    <!-- Correction ici: "Auteur" -> "auteur" -->
+    <label for="auteur">Auteur :</label>
+    <textarea type="text" id="auteur"></textarea>
+    <br>
+
+    <button onclick="createObject()">Créer</button>
+    <button onclick="updateObject()">Modifier</button>
+    <button onclick="deleteObject()">Supprimer</button>
+    <br>
+
+    <label for="authorModification">Auteur de modification :</label>
+    <input type="text" id="authorModification">
+  </div>
+
+  <div id="output">
+    <!-- Liste d'objets ici -->
+  </div>
+
+<script src="gestionObject.js"></script>
+</body>
+</html>
